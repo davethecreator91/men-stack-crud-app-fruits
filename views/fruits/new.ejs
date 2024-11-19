@@ -1,0 +1,29 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Create a Fruit</title>
+  </head>
+  <body>
+    <h1>Create a New Fruit!</h1><!-- views/fruits/new.ejs -->
+    <form action="/fruits" method="post">
+      
+      <div>
+          <label for="Name of Fruit">Name</label>
+          <input type="text" name="name" id="name">
+      </div>
+      <div class="checkbox-div">
+        <label for="ready-to-eat">Ready to Eat?</label>
+        <input type="checkbox" name="isReadyToEat" id="ready-to-eat" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    
+    <a href="/fruits">Back to Fruits</a>
+    
+  </body>
+</html>
